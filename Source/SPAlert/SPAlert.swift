@@ -35,7 +35,7 @@ public enum SPAlert {
      */
     public static func present(title: String, message: String? = nil, preset: SPAlertPreset) {
         let alertView = SPAlertView(title: title, message: message, preset: preset)
-        alertView.present()
+        alertView.present(duration: 1)
     }
     
     /**
@@ -47,7 +47,7 @@ public enum SPAlert {
      */
     public static func present(title: String, message: String? = nil, image: UIImage) {
         let alertView = SPAlertView(title: title, message: message, image: image)
-        alertView.present()
+        alertView.present(duration: 1)
     }
     
     /**
@@ -58,6 +58,6 @@ public enum SPAlert {
     public static func present(message: String, haptic: SPAlertHaptic = .none) {
         let alertView = SPAlertView(message: message)
         alertView.haptic = haptic
-        alertView.present()
+        alertView.present(duration: 1)
     }
 }
