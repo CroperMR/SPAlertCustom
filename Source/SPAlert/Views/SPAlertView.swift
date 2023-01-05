@@ -113,6 +113,13 @@ open class SPAlertView: UIView {
         commonInit()
     }
     
+    public init(title: String) {
+        super.init(frame: CGRect.zero)
+        titleLabel = UILabel()
+        titleLabel?.text = title
+        commonInit()
+    }
+    
     public init(message: String) {
         super.init(frame: CGRect.zero)
         subtitleLabel = UILabel()
